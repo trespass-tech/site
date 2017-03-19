@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300");
 body {
   background: #202020;
-  font-family: "Roboto script=all rev=2", 'Segoe UI', Tahoma, sans-serif; }
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
 
 h1 {
   color: green;
+  font-family: "Roboto", 'Segoe UI', Tahoma, sans-serif;
   font-weight: 300;
   font-size: 40px;
   text-align: center;
