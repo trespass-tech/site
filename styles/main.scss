@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300,400');
 
 body{
   background: #202020;
   color: white;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  text-align: center;
 }
 
 h1 {
@@ -12,7 +13,6 @@ h1 {
   font-family: "Roboto", 'Segoe UI', Tahoma, sans-serif;
   font-weight: 300;
   font-size: 40px;
-  text-align: center;
 
   @media (max-width: 640px) {
     font-size: 32px;
@@ -40,5 +40,6 @@ h1 {
     color: orange;
     font-size: 4em;
     display: block;
+    font-weight: 400;
   }
 }

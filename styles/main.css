@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300,400");
 body {
   background: #202020;
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  text-align: center; }
 
 h1 {
   color: green;
   font-family: "Roboto", 'Segoe UI', Tahoma, sans-serif;
   font-weight: 300;
-  font-size: 40px;
-  text-align: center; }
+  font-size: 40px; }
   @media (max-width: 640px) {
     h1 {
       font-size: 32px; } }
@@ -30,6 +30,7 @@ h1 {
     content: "<tr>";
     color: orange;
     font-size: 4em;
-    display: block; }
+    display: block;
+    font-weight: 400; }
 
 /*# sourceMappingURL=main.css.map */
