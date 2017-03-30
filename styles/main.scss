@@ -13,7 +13,6 @@ h1 {
   font-weight: 300;
   font-size: 40px;
   text-align: center;
-  margin-top: 3em;
 
   @media (max-width: 640px) {
     font-size: 32px;
@@ -34,5 +33,12 @@ h1 {
   em {
     color: white;
     font-style: normal;
+  }
+
+  &::before {
+    content: "<tr>";
+    color: orange;
+    font-size: 4em;
+    display: block;
   }
 }

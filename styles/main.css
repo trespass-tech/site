@@ -10,8 +10,7 @@ h1 {
   font-family: "Roboto", 'Segoe UI', Tahoma, sans-serif;
   font-weight: 300;
   font-size: 40px;
-  text-align: center;
-  margin-top: 3em; }
+  text-align: center; }
   @media (max-width: 640px) {
     h1 {
       font-size: 32px; } }
@@ -27,5 +26,10 @@ h1 {
   h1 em {
     color: white;
     font-style: normal; }
+  h1::before {
+    content: "<tr>";
+    color: orange;
+    font-size: 4em;
+    display: block; }
 
 /*# sourceMappingURL=main.css.map */
