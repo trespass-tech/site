@@ -38,4 +38,13 @@ h1 {
     display: block;
     font-weight: 400; }
 
+h2 {
+  font-weight: 400; }
+  @media (max-width: 360px) {
+    h2 {
+      font-size: 18px; } }
+  @media (max-width: 320px) {
+    h2 {
+      font-size: 16px; } }
+
 /*# sourceMappingURL=main.css.map */
