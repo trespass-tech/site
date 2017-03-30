@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400|Roboto:300,400");
 body {
+  display: flex;
+  flex-direction: column;
   color: #202020;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   text-align: center;
+  margin: 0; }
+
+header {
   margin: 0; }
 
 h1 {
@@ -12,6 +17,7 @@ h1 {
   font-family: "Roboto", 'Segoe UI', Tahoma, sans-serif;
   font-weight: 300;
   font-size: 40px;
+  margin: 0;
   padding-bottom: 1em; }
   @media (max-width: 640px) {
     h1 {
@@ -40,12 +46,20 @@ h1 {
 
 h2 {
   font-weight: 400;
-  margin: 1.5em; }
+  margin: 1.5em 0; }
   @media (max-width: 360px) {
     h2 {
       font-size: 18px; } }
   @media (max-width: 320px) {
     h2 {
       font-size: 16px; } }
+  h2 + h2 {
+    margin: 0 0 1.5em 0; }
+
+footer {
+  margin-top: auto;
+  padding: 1em;
+  background: #202020;
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */
