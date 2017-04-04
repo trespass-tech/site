@@ -44,6 +44,19 @@ h1 {
     display: block;
     font-weight: 400; }
 
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0; }
+  nav h1 {
+    padding-bottom: 0.15em; }
+    nav h1::before {
+      font-size: 1.4em;
+      padding-right: 0.25em; }
+  nav.active {
+    opacity: 1; }
+
 h2 {
   font-weight: 400;
   margin: 1.5em 0; }
@@ -55,6 +68,10 @@ h2 {
       font-size: 16px; } }
   h2 + h2 {
     margin: 0 0 1.5em 0; }
+
+a {
+  color: #202020;
+  text-decoration: none; }
 
 footer {
   margin-top: auto;

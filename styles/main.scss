@@ -57,6 +57,23 @@ h1 {
   }
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  h1 {
+    padding-bottom: 0.15em;
+    &::before{
+      font-size: 1.4em;
+      padding-right: 0.25em;
+    }
+  }
+  &.active {
+    opacity: 1;
+  }
+}
+
 h2 {
   font-weight: 400;
   margin: 1.5em 0;
@@ -74,6 +91,10 @@ h2 {
   }
 }
 
+a {
+  color: #202020;
+  text-decoration: none;
+}
 footer {
   margin-top: auto;
   padding: 1em;
