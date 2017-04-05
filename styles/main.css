@@ -27,7 +27,7 @@ header {
       font-size: 0.6em; } }
   @media (max-width: 320px) {
     header {
-      font-size: 0.45em; } }
+      font-size: 0.55em; } }
 
 h1 {
   color: green;
@@ -65,9 +65,6 @@ address {
   @media (max-width: 360px) {
     address {
       font-size: 1.75em; } }
-  @media (max-width: 320px) {
-    address {
-      font-size: 2em; } }
 
 nav {
   position: fixed;
