@@ -13,28 +13,28 @@ header {
   background: #202020;
   font-family: "Roboto", 'Segoe UI', Tahoma, sans-serif;
   font-weight: 300; }
+  @media (max-width: 640px) {
+    header {
+      font-size: 0.8em; } }
+  @media (max-width: 480px) {
+    header {
+      font-size: 0.75em; } }
+  @media (max-width: 400px) {
+    header {
+      font-size: 0.7em; } }
+  @media (max-width: 360px) {
+    header {
+      font-size: 0.6em; } }
+  @media (max-width: 320px) {
+    header {
+      font-size: 0.45em; } }
 
 h1 {
   color: green;
-  font-size: 40px;
+  font-size: 2.5em;
   font-family: inherit;
   font-weight: inherit;
   margin: 0; }
-  @media (max-width: 640px) {
-    h1 {
-      font-size: 32px; } }
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 30px; } }
-  @media (max-width: 400px) {
-    h1 {
-      font-size: 28px; } }
-  @media (max-width: 360px) {
-    h1 {
-      font-size: 24px; } }
-  @media (max-width: 320px) {
-    h1 {
-      font-size: 18px; } }
   h1 em {
     color: white;
     font-style: normal; }
@@ -59,6 +59,15 @@ address {
     text-decoration: none;
     white-space: nowrap;
     margin: 0.5em 0.5em 0 0.5em; }
+  @media (max-width: 640px) {
+    address {
+      font-size: 1.5em; } }
+  @media (max-width: 360px) {
+    address {
+      font-size: 1.75em; } }
+  @media (max-width: 320px) {
+    address {
+      font-size: 2em; } }
 
 nav {
   position: fixed;
