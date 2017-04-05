@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400|Roboto:300,400");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400");
 body {
   display: flex;
   flex-direction: column;
@@ -9,16 +9,17 @@ body {
   margin: 0; }
 
 header {
-  margin: 0; }
+  margin: 0;
+  background: #202020;
+  font-family: "Roboto", 'Segoe UI', Tahoma, sans-serif;
+  font-weight: 300; }
 
 h1 {
-  background: #202020;
   color: green;
-  font-family: "Roboto", 'Segoe UI', Tahoma, sans-serif;
-  font-weight: 300;
   font-size: 40px;
-  margin: 0;
-  padding-bottom: 1em; }
+  font-family: inherit;
+  font-weight: inherit;
+  margin: 0; }
   @media (max-width: 640px) {
     h1 {
       font-size: 32px; } }
@@ -44,6 +45,21 @@ h1 {
     display: block;
     font-weight: 400; }
 
+address {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.25em;
+  font-style: normal;
+  margin: 0.5em 0 1.5em 0; }
+  address a {
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    margin: 0.5em 0.5em 0 0.5em; }
+
 nav {
   position: fixed;
   top: 0;
@@ -68,10 +84,6 @@ h2 {
       font-size: 16px; } }
   h2 + h2 {
     margin: 0 0 1.5em 0; }
-
-a {
-  color: #202020;
-  text-decoration: none; }
 
 footer {
   margin-top: auto;
