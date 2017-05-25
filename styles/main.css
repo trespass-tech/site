@@ -66,30 +66,28 @@ address {
     address {
       font-size: 1.75em; } }
 
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  opacity: 0; }
-  nav h1 {
-    padding-bottom: 0.15em; }
-    nav h1::before {
-      font-size: 1.4em;
-      padding-right: 0.25em; }
-  nav.active {
-    opacity: 1; }
+article {
+  font-size: 1.25em; }
+  article.technology {
+    background-color: antiquewhite; }
+  article.cloud {
+    background-color: aquamarine; }
+  article.devops {
+    background-color: burlywood; }
+  article.node {
+    background-color: cornflowerblue; }
 
 h2 {
-  font-weight: 400;
-  margin: 1.5em 0; }
+  font-weight: 400; }
   @media (max-width: 360px) {
     h2 {
       font-size: 18px; } }
   @media (max-width: 320px) {
     h2 {
       font-size: 16px; } }
-  h2 + h2 {
-    margin: 0 0 1.5em 0; }
+
+p {
+  margin: 1.5em; }
 
 footer {
   margin-top: auto;

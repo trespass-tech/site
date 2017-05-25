@@ -84,26 +84,28 @@ address {
   }
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  opacity: 0;
-  h1 {
-    padding-bottom: 0.15em;
-    &::before{
-      font-size: 1.4em;
-      padding-right: 0.25em;
-    }
+article {
+  font-size: 1.25em;
+
+  &.technology {
+    background-color: antiquewhite;
   }
-  &.active {
-    opacity: 1;
+
+  &.cloud {
+    background-color: aquamarine;
+  }
+
+  &.devops {
+    background-color: burlywood;
+  }
+
+  &.node {
+    background-color: cornflowerblue;
   }
 }
 
 h2 {
   font-weight: 400;
-  margin: 1.5em 0;
 
   @media (max-width: 360px) {
     font-size: 18px;
@@ -112,9 +114,10 @@ h2 {
   @media (max-width: 320px) {
     font-size: 16px;
   }
-  + h2 {
-    margin: 0 0 1.5em 0;
-  }
+}
+
+p {
+  margin: 1.5em;
 }
 
 footer {
