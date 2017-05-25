@@ -68,14 +68,8 @@ address {
 
 article {
   font-size: 1.25em; }
-  article.technology {
-    background-color: antiquewhite; }
-  article.cloud {
-    background-color: aquamarine; }
-  article.devops {
-    background-color: burlywood; }
-  article.node {
-    background-color: cornflowerblue; }
+  article:nth-child(even) {
+    background-color: #e0e0e0; }
 
 h2 {
   font-weight: 400; }
