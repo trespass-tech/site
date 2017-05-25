@@ -85,8 +85,9 @@ address {
 }
 
 article {
-  &:nth-child(even) {
+  &:nth-child(odd) {
     background-color: #e0e0e0;
+    background-color: rgba(orange, 0.1);
   }
 }
 
