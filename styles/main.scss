@@ -85,27 +85,24 @@ address {
 }
 
 article {
-  font-size: 1.25em;
-
   &:nth-child(even) {
     background-color: #e0e0e0;
   }
 }
 
 h2 {
+  font-size: 1.5em;
   font-weight: 400;
-
-  @media (max-width: 360px) {
-    font-size: 18px;
-  }
-
-  @media (max-width: 320px) {
-    font-size: 16px;
-  }
 }
 
 p {
+  font-size: 1.5em;
+  font-weight: 300;
   margin: 1.5em;
+
+  strong {
+    font-weight: 300;
+  }
 }
 
 footer {

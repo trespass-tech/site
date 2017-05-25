@@ -66,22 +66,19 @@ address {
     address {
       font-size: 1.75em; } }
 
-article {
-  font-size: 1.25em; }
-  article:nth-child(even) {
-    background-color: #e0e0e0; }
+article:nth-child(even) {
+  background-color: #e0e0e0; }
 
 h2 {
+  font-size: 1.5em;
   font-weight: 400; }
-  @media (max-width: 360px) {
-    h2 {
-      font-size: 18px; } }
-  @media (max-width: 320px) {
-    h2 {
-      font-size: 16px; } }
 
 p {
+  font-size: 1.5em;
+  font-weight: 300;
   margin: 1.5em; }
+  p strong {
+    font-weight: 300; }
 
 footer {
   margin-top: auto;
