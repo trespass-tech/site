@@ -38,7 +38,7 @@ header {
 }
 
 h1 {
-  color:green;
+  color: green;
   font-size: 2.5em;
   font-family: inherit;
   font-weight: inherit;
@@ -87,7 +87,7 @@ address {
 article {
   &:nth-child(odd) {
     background-color: #e0e0e0;
-    background-color: rgba(orange, 0.1);
+    background-color: rgba(#0066cc, 0.1);
   }
 }
 
