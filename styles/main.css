@@ -80,8 +80,8 @@ p {
   font-weight: 300;
   line-height: 1.5em;
   margin: 1.5em; }
-  p strong {
-    font-weight: 300; }
+  p em {
+    font-style: normal; }
 
 footer {
   margin-top: auto;
