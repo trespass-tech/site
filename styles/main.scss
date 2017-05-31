@@ -92,9 +92,14 @@ article {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-family: "Roboto", 'Segoe UI', Tahoma, sans-serif;
   font-weight: 400;
+  font-size: 1.6em;
   margin: 1.5em;
+
+  @media (max-width: 640px) {
+    font-size: 1.5em;
+  }
 }
 
 p {
