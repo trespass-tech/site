@@ -1,0 +1,21 @@
+{
+  "name": "Trespass Technology",
+  "short_name": "Trespass",
+  "icons": [{
+    "src": "img/apple-touch-icon-120x120.png",
+    "type": "image/png",
+    "sizes": "120x120"
+  }, {
+    "src": "img/favicon-196x196.png",
+    "type": "image/png",
+    "sizes": "196x196"
+  }, {
+    "src": "img/favicon-512x512.png",
+    "type": "image/png",
+    "sizes": "512x512"
+  }],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#202020",
+  "theme_color": "#202020"
+}

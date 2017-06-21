@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
     <title>Trespass Technology</title>
     <link rel="stylesheet" href="styles/main.css?v=3">
@@ -6,12 +6,14 @@
     <link rel="apple-touch-icon" href="img/apple-touch-icon-120x120.png?v=4">
     <link rel="canonical" href="https://trespass.technology/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#202020">
     <meta property="og:url" content="https://trespass.technology/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Trespass Technology">
     <meta property="og:description" content="Technology for Business. Cloud and Serverless. Node.js and .NET">
     <meta property="og:image" content="https://trespass.technology/img/trespass.png?v=3">
     <meta property="fb:app_id" content="320286055041163">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
 <header>
@@ -48,5 +50,16 @@
 <footer>
     &copy; Trespass Technology Limited
 </footer>
+<script>
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+            .then(function(registration) {
+                console.log('Service Worker Registered');
+            });
+        navigator.serviceWorker.ready.then(function(registration) {
+            console.log('Service Worker Ready');
+        });
+    }
+</script>
 </body>
 </html>
