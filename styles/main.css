@@ -28,6 +28,9 @@ header {
     header {
       font-size: 0.55em; } }
 
+a {
+  color: #0066cc; }
+
 h1 {
   color: green;
   font-size: 2.5em;
@@ -68,6 +71,15 @@ address {
 article:nth-child(odd) {
   background-color: #e0e0e0;
   background-color: rgba(0, 102, 204, 0.1); }
+article img {
+  height: 5em; }
+article li {
+  width: 12em;
+  margin-bottom: 2em; }
+  article li.mobile-5 > img {
+    background-color: rgba(0, 0, 0, 0.3); }
+  article li a {
+    font-weight: 400; }
 
 h2 {
   font-family: "Roboto", 'Segoe UI', Tahoma, sans-serif;
@@ -79,12 +91,23 @@ h2 {
       font-size: 1.5em; } }
 
 p {
+  margin: 1.5em;
   font-size: 1.4em;
   font-weight: 300;
-  line-height: 1.5em;
-  margin: 1.5em; }
+  line-height: 1.5em; }
   p em {
-    font-style: normal; }
+    font-style: normal;
+    font-size: 1.25em; }
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.5em; }
 
 footer {
   margin-top: auto;

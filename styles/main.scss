@@ -1,7 +1,12 @@
+$front-face: #202020;
+$front-accent: #0066cc;
+$header-face: white;
+$header-accent: green;
+$logo-face: orange;
 body {
   display: flex;
   flex-direction: column;
-  color: #202020;
+  color: $front-face;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   text-align: center;
@@ -10,7 +15,7 @@ body {
 
 header {
   margin: 0;
-  background: #202020;
+  background: $front-face;
   font-family: "Roboto", 'Segoe UI', Tahoma, sans-serif;
   font-weight: 300;
 
@@ -35,21 +40,25 @@ header {
   }
 }
 
+a{
+  color: $front-accent;
+}
+
 h1 {
-  color: green;
+  color: $header-accent;
   font-size: 2.5em;
   font-family: inherit;
   font-weight: inherit;
   margin:0;
 
   em {
-    color: white;
+    color: $header-face;
     font-style: normal;
   }
 
   &::before {
     content: "<tr>";
-    color: orange;
+    color: $logo-face;
     font-size: 4em;
     display: block;
     font-weight: 400;
@@ -67,7 +76,7 @@ address {
   margin: 0.5em 0 1.5em 0;
 
   a {
-    color: white;
+    color: $header-face;
     text-decoration: none;
     white-space: nowrap;
     margin: 0.5em 0.5em 0 0.5em;
@@ -85,7 +94,20 @@ address {
 article {
   &:nth-child(odd) {
     background-color: #e0e0e0;
-    background-color: rgba(#0066cc, 0.1);
+    background-color: rgba($front-accent, 0.1);
+  }
+  img {
+    height: 5em;
+  }
+  li {
+    width: 12em;
+    margin-bottom: 2em;
+    &.mobile-5 > img {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    a {
+      font-weight: 400;
+    }
   }
 }
 
@@ -101,19 +123,31 @@ h2 {
 }
 
 p {
+  margin: 1.5em;
   font-size: 1.4em;
   font-weight: 300;
   line-height: 1.5em;
-  margin: 1.5em;
 
   em {
     font-style: normal;
+    font-size: 1.25em;
   }
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.5em;
 }
 
 footer {
   margin-top: auto;
   padding: 1em;
-  background: #202020;
-  color: white;
+  background: $front-face;
+  color: $header-face;
 }
