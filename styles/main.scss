@@ -1,7 +1,8 @@
 $front-face: #202020;
-$front-accent: #0066cc;
+$front-accent: steelblue;
+$body-alter-background: aliceblue;
 $header-face: white;
-$header-accent: green;
+$header-accent: forestgreen;
 $logo-face: orange;
 body {
   display: flex;
@@ -94,7 +95,7 @@ address {
 article {
   &:nth-child(odd) {
     background-color: #e0e0e0;
-    background-color: rgba($front-accent, 0.1);
+    background-color: $body-alter-background;
   }
   img {
     height: 5em;

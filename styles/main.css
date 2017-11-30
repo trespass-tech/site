@@ -29,10 +29,10 @@ header {
       font-size: 0.55em; } }
 
 a {
-  color: #0066cc; }
+  color: steelblue; }
 
 h1 {
-  color: green;
+  color: forestgreen;
   font-size: 2.5em;
   font-family: inherit;
   font-weight: inherit;
@@ -70,7 +70,7 @@ address {
 
 article:nth-child(odd) {
   background-color: #e0e0e0;
-  background-color: rgba(0, 102, 204, 0.1); }
+  background-color: aliceblue; }
 article img {
   height: 5em; }
 article li {
