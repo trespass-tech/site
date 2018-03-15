@@ -27,6 +27,26 @@ header {
   @media (max-width: 320px) {
     header {
       font-size: 0.55em; } }
+  header address {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    font-style: normal;
+    margin: 0.5em 0 1.5em 0; }
+    header address a {
+      color: white;
+      text-decoration: none;
+      white-space: nowrap;
+      margin: 0.5em 0.5em 0 0.5em; }
+    @media (max-width: 640px) {
+      header address {
+        font-size: 1.5em; } }
+    @media (max-width: 360px) {
+      header address {
+        font-size: 1.75em; } }
 
 a {
   color: steelblue; }
@@ -46,27 +66,6 @@ h1 {
     font-size: 4em;
     display: block;
     font-weight: 400; }
-
-address {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 1.25em;
-  font-style: normal;
-  margin: 0.5em 0 1.5em 0; }
-  address a {
-    color: white;
-    text-decoration: none;
-    white-space: nowrap;
-    margin: 0.5em 0.5em 0 0.5em; }
-  @media (max-width: 640px) {
-    address {
-      font-size: 1.5em; } }
-  @media (max-width: 360px) {
-    address {
-      font-size: 1.75em; } }
 
 article:nth-child(odd) {
   background-color: #e0e0e0;
@@ -114,5 +113,13 @@ footer {
   padding: 1em;
   background: #202020;
   color: white; }
+  footer small {
+    display: block;
+    margin-top: 0.75em;
+    line-height: 1.5em;
+    font-weight: 300;
+    color: grey; }
+  footer address {
+    font-style: normal; }
 
 /*# sourceMappingURL=main.css.map */
