@@ -77,10 +77,18 @@ h1 {
   font-family: inherit;
   font-weight: inherit;
   margin:0;
+  text-transform: lowercase;
 
   em {
     color: $header-face;
     font-style: normal;
+    &:first-child::before{
+      content: "https://";
+      color: $header-accent;
+    }
+    + em:before {
+      content: ".";
+    }
   }
 
   &::before {
@@ -90,6 +98,41 @@ h1 {
     display: block;
     font-weight: 400;
   }
+}
+
+.loader-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  > .loader {
+    color: $logo-face;
+    font-size: 4em;
+    font-weight: 400;
+    background-color: $front-face;
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 78px;
+
+    line-height: 150px;
+    white-space: nowrap;
+
+
+    border: 3px solid $body-alter-background;
+    z-index: 1500;
+    animation: spin 2s linear infinite;
+  }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 article {

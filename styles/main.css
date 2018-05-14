@@ -56,10 +56,16 @@ h1 {
   font-size: 2.5em;
   font-family: inherit;
   font-weight: inherit;
-  margin: 0; }
+  margin: 0;
+  text-transform: lowercase; }
   h1 em {
     color: white;
     font-style: normal; }
+    h1 em:first-child::before {
+      content: "https://";
+      color: forestgreen; }
+    h1 em + em:before {
+      content: "."; }
   h1::before {
     content: "<tr>";
     color: orange;
@@ -67,6 +73,37 @@ h1 {
     display: block;
     font-weight: 400; }
 
+.loader-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000; }
+  .loader-wrap > .loader {
+    color: orange;
+    font-size: 4em;
+    font-weight: 400;
+    background-color: #202020;
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 78px;
+    line-height: 150px;
+    white-space: nowrap;
+    border: 3px solid aliceblue;
+    z-index: 1500;
+    animation: spin 2s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 article:nth-child(odd) {
   background-color: #e0e0e0;
   background-color: aliceblue; }
