@@ -126,6 +126,10 @@ h2 {
     h2 {
       font-size: 1.5em; } }
 
+h4 {
+  font-weight: 400;
+  margin: 0; }
+
 p {
   margin: 1.5em;
   font-size: 1.4em;
@@ -150,8 +154,10 @@ footer {
   padding: 1em;
   background: #202020;
   color: white; }
+  footer li {
+    margin: 0.25em; }
   footer img {
-    height: 2em; }
+    height: 1.5em; }
   footer small {
     display: block;
     margin-top: 0.75em;
