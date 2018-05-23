@@ -27,6 +27,10 @@ header {
   @media (max-width: 320px) {
     header {
       font-size: 0.55em; } }
+  header > img {
+    height: 9.6em;
+    display: inline-block;
+    margin: 1.5em 0 0.9em 0; }
   header address {
     display: flex;
     justify-content: center;
@@ -66,12 +70,6 @@ h1 {
       color: forestgreen; }
     h1 em + em:before {
       content: "."; }
-  h1::before {
-    content: "<tr>";
-    color: orange;
-    font-size: 4em;
-    display: block;
-    font-weight: 400; }
 
 .loader-wrap {
   position: fixed;

@@ -40,6 +40,12 @@ header {
     font-size: 0.55em;
   }
 
+  > img {
+    height: 9.6em;
+    display: inline-block;
+    margin: 1.5em 0 0.9em 0;
+  }
+
   address {
     display: flex;
     justify-content: center;
@@ -89,14 +95,6 @@ h1 {
     + em:before {
       content: ".";
     }
-  }
-
-  &::before {
-    content: "<tr>";
-    color: $logo-face;
-    font-size: 4em;
-    display: block;
-    font-weight: 400;
   }
 }
 
