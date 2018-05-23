@@ -107,11 +107,11 @@ h1 {
 article:nth-child(odd) {
   background-color: #e0e0e0;
   background-color: aliceblue; }
-article img {
-  height: 5em; }
 article li {
   width: 12em;
   margin-bottom: 2em; }
+  article li > img {
+    height: 5em; }
   article li.mobile-5 > img {
     background-color: rgba(0, 0, 0, 0.3); }
   article li a {
@@ -150,6 +150,8 @@ footer {
   padding: 1em;
   background: #202020;
   color: white; }
+  footer img {
+    height: 2em; }
   footer small {
     display: block;
     margin-top: 0.75em;

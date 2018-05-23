@@ -140,12 +140,12 @@ article {
     background-color: #e0e0e0;
     background-color: $body-alter-background;
   }
-  img {
-    height: 5em;
-  }
   li {
     width: 12em;
     margin-bottom: 2em;
+    > img {
+      height: 5em;
+    }
     &.mobile-5 > img {
       background-color: rgba(0, 0, 0, 0.3);
     }
@@ -194,6 +194,10 @@ footer {
   padding: 1em;
   background: $front-face;
   color: $header-face;
+
+  img {
+    height: 2em;
+  }
 
   small {
     display: block;
