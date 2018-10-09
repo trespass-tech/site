@@ -2,11 +2,6 @@
 <html lang="en">
 <head>
     <title>Trespass Technology</title>
-    <link rel="stylesheet" href="styles/main.css?v=9">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400">
-    <link rel="icon" href="favicon.ico?v=3">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon-120x120.png?v=4">
-    <link rel="canonical" href="https://trespass.technology/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#202020">
     <meta property="og:url" content="https://trespass.technology/">
@@ -16,7 +11,14 @@
     <meta property="og:image" content="https://trespass.technology/img/trespass.png?v=3">
     <meta property="fb:app_id" content="320286055041163">
     <meta name="description" content="Digital Transformations. AWS Consulting. Team Coaching. Node.js and .NET. Email us at enquiries@trespass.technology. Call us at +44 (0) 7721 614056">
+    <link rel="icon" href="favicon.ico?v=3">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon-120x120.png?v=4">
+    <link rel="canonical" href="https://trespass.technology/">
     <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles/main.css?v=9">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400">
+    </noscript>
 </head>
 <body>
 <header>
@@ -102,19 +104,12 @@
         <address>4 Calder Court, Amy Johnson Way, Blackpool, Lancashire, United Kingdom, FY4 2RH</address>
     </small>
 </footer>
-<!--<div class="loader-wrap"><div class="loader">&lt;tr&gt;</div></div>-->
 <script>
-    /*
-    if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js', { scope: '/' })
-            .then(function(registration) {
-                console.log('Service Worker Registered');
-            });
-        navigator.serviceWorker.ready.then(function(registration) {
-            console.log('Service Worker Ready');
-        });
-    }
-    */
+    var fonts = document.createElement('link');
+    fonts.rel = 'stylesheet';
+    fonts.href = 'https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400';
+    var firstLink = document.getElementsByTagName('link')[0];
+    firstLink.parentNode.insertBefore(fonts, firstLink);
 </script>
 </body>
 </html>
