@@ -101,5 +101,17 @@
         <address>4 Calder Court, Amy Johnson Way, Blackpool, Lancashire, United Kingdom, FY4 2RH</address>
     </small>
 </footer>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js?v=2')
+            .then(function(registration) {
+                console.log('Registration successful, scope is:', registration.scope);
+                setInterval(function(){ registration.update()}, 300000);
+            })
+            .catch(function(error) {
+                console.log('Service worker registration failed, error:', error);
+            });
+    }
+</script>
 </body>
 </html>
