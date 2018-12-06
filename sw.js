@@ -1,10 +1,10 @@
 self.addEventListener('install', event => {
-    console.log('Installing offline content caching V1');
+    console.log('Installing offline content caching V2');
     self.skipWaiting();
 });
 
 self.addEventListener('activate', function(event) {
-    console.log('Activating offline content caching V1');
+    console.log('Activating offline content caching V2');
     event.waitUntil(
         caches.keys().then(function(cacheNames) {
             return Promise.all(
