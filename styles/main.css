@@ -156,16 +156,22 @@ h1 em + em:before {
 }
 
 @keyframes spin {
-  0% {
+  from {
     transform: rotate(0deg);
   }
-  100% {
-    transform: rotate(360deg);
+  to {
+    transform: rotate(365deg);
   }
 }
-article:nth-child(odd) {
-  background-color: #e0e0e0;
+article:nth-child(even) {
   background-color: aliceblue;
+}
+article.banner {
+  background-color: orange;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
 }
 article > p {
   font-size: 1.4em;
